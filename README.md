@@ -6,3 +6,9 @@
 * ✏[David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide): Guide is based on the Certified Kubernetes Administrator Exam Curriculum 1.26. Revision Topics and Lab Guide With Example Answers.
 
 * ✅[alifiroozi80/CKA/CKA](https://github.com/alifiroozi80/CKA/blob/main/CKA/README.md): Вся теория в кратком изложении.
+
+Commands
+========
+`kubeadm config print init-defaults`
+
+`kubectl api-resources --namespaced=false`
