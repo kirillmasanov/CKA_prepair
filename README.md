@@ -9,6 +9,12 @@
 
 Commands
 ========
-`kubeadm config print init-defaults`
-
-`kubectl api-resources --namespaced=false`
+```shell
+kubeadm config print init-defaults
+```
+```shell
+kubectl api-resources --namespaced=false
+```
+```shell
+kubectl -n rbac-test --as=system:serviceaccount:rbac-test:rbac-test-sa auth can-i get pods
+```
