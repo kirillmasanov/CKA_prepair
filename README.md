@@ -42,6 +42,15 @@ Perform a restore:
 ETCDCTL_API=3 etcdctl snapshot restore snapshot.db
 ```
 ## 15% - Workloads & Scheduling
+```shell
+kubectl rollout undo deployment/abc
+kubectl rollout status daemonset/foo
+kubectl rollout restart deployment/abc
+```
+```shell
+kubectl set image deployment/nginx ginx=nginx:1.9.1
+kubectl set image daemonset abc *=nginx:1.9.1
+```
 ## 20% - Services & Networking
 ## 10% - Storage
 ## 30% - Troubleshooting
