@@ -52,5 +52,9 @@ kubectl set image deployment/nginx ginx=nginx:1.9.1
 kubectl set image daemonset abc *=nginx:1.9.1
 ```
 ## 20% - Services & Networking
+```shell
+10-42-2-68.default.pod.cluster.local
+my-svc.my-namespace.svc.cluster.local
+```
 ## 10% - Storage
 ## 30% - Troubleshooting
