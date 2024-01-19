@@ -57,4 +57,56 @@ kubectl set image daemonset abc *=nginx:1.9.1
 my-svc.my-namespace.svc.cluster.local
 ```
 ## 10% - Storage
+Access Modes:
+*  `ReadWriteOnce` – The volume can be mounted as read-write by a single node
+*  `ReadOnlyMany` – The volume can be mounted read-only by many nodes
+*  `ReadWriteMany` – The volume can be mounted as read-write by many nodes
 ## 30% - Troubleshooting
+Container logs: `/var/log/containers`
+To determine the cluster domain, inspect the coredns configmap. Below indicating `cluster.local`:
+```yaml
+> kubectl get cm coredns -n kube-system -o yaml
+apiVersion: v1
+data:
+  Corefile: |
+    .:53 {
+        errors
+        health {
+          lameduck 5s
+        }
+        ready
+        kubernetes cluster.local in-addr.arpa ip6.arpa {
+```
+Create a simple Pod to use as a test environment:
+```shell
+kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
+kubectl exec -it dnsutils -- nslookup kubernetes.default
+```
+You can verify if queries are being received by CoreDNS by adding the log plugin to the CoreDNS configuration (aka Corefile).
+`kubectl -n kube-system edit configmap coredns`
+Then add log in the Corefile section per the example below:
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns
+  namespace: kube-system
+data:
+  Corefile: |
+    .:53 {
+        log
+        errors
+        health
+        kubernetes cluster.local in-addr.arpa ip6.arpa {
+          pods insecure
+          upstream
+          fallthrough in-addr.arpa ip6.arpa
+        }
+        prometheus :9153
+        forward . /etc/resolv.conf
+        cache 30
+        loop
+        reload
+        loadbalance
+    }    
+```
