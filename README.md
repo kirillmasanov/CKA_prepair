@@ -62,6 +62,11 @@ Access Modes:
 *  `ReadOnlyMany` – The volume can be mounted read-only by many nodes
 *  `ReadWriteMany` – The volume can be mounted as read-write by many nodes
 ## 30% - Troubleshooting
+```shell
+crictl pods
+systemctl daemon-reload
+systemctl status kubelet
+```
 Container logs: `/var/log/containers`
 To determine the cluster domain, inspect the coredns configmap. Below indicating `cluster.local`:
 ```yaml
