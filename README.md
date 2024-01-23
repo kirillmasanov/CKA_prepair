@@ -24,7 +24,7 @@ Assessing cluster health. Оn a master node. Three endpoints exist - healthz,liv
 ```shell
 curl -k https://localhost:6443/livez?verbose
 ```
-Backing up etcd.
+Backing up etcd. [ETCD FAQ](https://github.com/kodekloudhub/community-faq/blob/main/docs/etcd-faq.md)
 ```shell
 ETCDCTL_API=3 etcdctl snapshot save snapshot.db --cacert /etc/kubernetes/pki/etcd/server.crt --cert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/ca.key
 ```
