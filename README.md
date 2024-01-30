@@ -8,6 +8,10 @@
 * ✅[David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)  
   Guide is based on the Certified Kubernetes Administrator Exam Curriculum 1.26. Revision Topics and Lab Guide With Example Answers.
 
+```shell
+/var/lib/kubelet/config.yaml
+```
+
 CKA Curriculum v1.28
 ====================
 ## 25% - Cluster Architecture, Installation & Configuration 
