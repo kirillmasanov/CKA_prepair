@@ -45,6 +45,11 @@ Perform a restore:
 ```shell
 ETCDCTL_API=3 etcdctl snapshot restore snapshot.db
 ```
+Upgrade:
+```shell
+apt-cache madison <packagename>  # show available versions of a package
+apt-get install --only-upgrade <packagename>  # upgrade a single package
+```
 ## 15% - Workloads & Scheduling
 ```shell
 kubectl rollout undo deployment/abc
