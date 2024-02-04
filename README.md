@@ -66,7 +66,7 @@ kubectl set image daemonset abc *=nginx:1.9.1
 my-svc.my-namespace.svc.cluster.local
 ```
 ```shell
-/etc/cni/net.d/  # CNI config file
+/etc/cni/net.d/  # CNI config file. By default the kubelet looks into this folder to discover the CNI plugins.
 ```
 ## 10% - Storage
 Access Modes:
