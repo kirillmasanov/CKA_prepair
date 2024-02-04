@@ -65,6 +65,9 @@ kubectl set image daemonset abc *=nginx:1.9.1
 10-42-2-68.default.pod.cluster.local
 my-svc.my-namespace.svc.cluster.local
 ```
+```shell
+/etc/cni/net.d/  # CNI config file
+```
 ## 10% - Storage
 Access Modes:
 *  `ReadWriteOnce` – The volume can be mounted as read-write by a single node
