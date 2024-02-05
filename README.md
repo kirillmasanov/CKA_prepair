@@ -54,6 +54,10 @@ Print join command:
 ```shell
 kubeadm token create --print-join-command
 ```
+Check certificate expiration:
+```shell
+kubeadm certs check-expiration
+```
 ## 15% - Workloads & Scheduling
 ```shell
 kubectl rollout undo deployment/abc
