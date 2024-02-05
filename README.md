@@ -50,6 +50,10 @@ Upgrade:
 apt-cache madison <packagename>  # show available versions of a package
 apt-get install --only-upgrade <packagename>  # upgrade a single package
 ```
+Print join command:
+```shell
+kubeadm token create --print-join-command
+```
 ## 15% - Workloads & Scheduling
 ```shell
 kubectl rollout undo deployment/abc
