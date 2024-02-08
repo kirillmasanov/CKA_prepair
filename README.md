@@ -49,7 +49,7 @@ ETCDCTL_API=3 etcdctl snapshot restore snapshot.db
 Upgrade:
 ```shell
 apt-cache madison <packagename>  # show available versions of a package
-apt-get install --only-upgrade <packagename>  # upgrade a single package
+apt-get install --only-upgrade <packagename>  # upgrade only that single package, and only if it is installed. If you wish to install the package if it doesn't exist, or upgrade it if it does, you may leave out --only-upgrade.
 ```
 Print join command:
 ```shell
