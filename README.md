@@ -8,10 +8,8 @@
 * ✅[alifiroozi80/CKA/CKA](https://github.com/alifiroozi80/CKA/blob/main/CKA/README.md): Вся теория в кратком изложении.
 * ✅[David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)  
   Guide is based on the Certified Kubernetes Administrator Exam Curriculum 1.26. Revision Topics and Lab Guide With Example Answers.
+* ✅[fireflycons/tips-for-CKA-CKAD-CKS](https://github.com/fireflycons/tips-for-CKA-CKAD-CKS): Tips for CKA-CKAD-CKS
 
-```shell
-/var/lib/kubelet/config.yaml
-```
 
 CKA Curriculum v1.28
 ====================
@@ -58,6 +56,9 @@ kubeadm token create --print-join-command
 Check certificate expiration:
 ```shell
 kubeadm certs check-expiration
+```
+```shell
+/var/lib/kubelet/config.yaml  # kubelet config
 ```
 ## 15% - Workloads & Scheduling
 ```shell
