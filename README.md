@@ -9,6 +9,7 @@
 * ✅[David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)  
   Guide is based on the Certified Kubernetes Administrator Exam Curriculum 1.26. Revision Topics and Lab Guide With Example Answers.
 * ✅[fireflycons/tips-for-CKA-CKAD-CKS](https://github.com/fireflycons/tips-for-CKA-CKAD-CKS): Tips for CKA-CKAD-CKS
+* ✅[CKS CKA CKAD Remote Desktop](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop)
 
 
 CKA Curriculum v1.28
