@@ -3,6 +3,7 @@
 * [mahdibouaziz/Cloud-native-docs/killer.sh.md](https://github.com/mahdibouaziz/Cloud-native-docs/blob/2e5c4b2c6e4bbeb66511924e8b6634edd4aa2eb0/kubernetes/killer.sh.md)
 * [ahmetb/kubernetes-network-policy-recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
 * ✏[deemoprobe/kubernetes](https://github.com/deemoprobe/kubernetes/blob/main/Kubernetes%E9%85%8D%E7%BD%AE%E6%A1%88%E4%BE%8B.md)
+* [Kubernetes配置案例]https://github.com/deemoprobe/kubernetes/blob/main/Kubernetes%E9%85%8D%E7%BD%AE%E6%A1%88%E4%BE%8B.md
 
 * ✅[alifiroozi80/CKA/CKA](https://github.com/alifiroozi80/CKA/blob/main/CKA/README.md): Вся теория в кратком изложении.
 * ✅[David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)  
